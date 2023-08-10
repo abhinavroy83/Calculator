@@ -20,7 +20,7 @@ for (var i = 0; i < buttons.length; i++) {
     value = this.getAttribute("data-value");
 
     if (isOperator(value)) {
-        console.log(value);
+      console.log(value);
       if (operator === "") {
         operator = value;
         updateDisplay();
@@ -40,8 +40,8 @@ for (var i = 0; i < buttons.length; i++) {
       fullExpression = "";
       display.textContent = "";
     } else if (value == "=") {
-      operand2 = fullExpression.slice(operand1.length + operator.length + 2);
-      var result = eval(operand1 + " " + operator + " " + operand2);
+      console.log(operand1, operand2);
+      var result = eval(operand1 + " z" + operator + " " + operand2);
       console.log(result);
       if (!isNaN(result)) {
         operand1 = result.toString();
@@ -52,11 +52,11 @@ for (var i = 0; i < buttons.length; i++) {
       }
     } else {
       if (operator === "") {
-          operand1 += value;
-          console.log(value);
-        } else {
-            operand2 += value;
-            console.log(value);
+        operand1 += value;
+        console.log(value);
+      } else {
+        operand2 += value;
+        console.log(value);
       }
       updateDisplay();
     }
