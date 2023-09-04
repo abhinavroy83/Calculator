@@ -41,7 +41,7 @@ for (var i = 0; i < buttons.length; i++) {
       display.textContent = "";
     } else if (value == "=") {
       console.log(operand1, operand2);
-      var result = eval(operand1 + " z" + operator + " " + operand2);
+      var result = eval(operand1 + " "+ operator + " " + operand2);
       console.log(result);
       if (!isNaN(result)) {
         operand1 = result.toString();
