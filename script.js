@@ -5,6 +5,7 @@ var operand1 = "";
 var operand2 = "";
 var operator = "";
 var fullExpression = "";
+//check
 
 function updateDisplay() {
   fullExpression = operand1 + " " + operator + " " + operand2;
