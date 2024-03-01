@@ -6,7 +6,7 @@ var operand2 = "";
 var operator = "";
 var fullExpression = "";
 //check
-
+//testibg2
 function updateDisplay() {
   fullExpression = operand1 + " " + operator + " " + operand2;
   display.textContent = fullExpression;
